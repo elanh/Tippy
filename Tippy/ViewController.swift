@@ -18,6 +18,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    let defaults = UserDefaults.standard
+    defaults.set(0.2, forKey: "default_tip_percentage")
+    defaults.synchronize()
+    
+    let defaults = UserDefaults.standard
+    let tipValue = defaults.double(forKey: "default_tip_percentage")
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,5 +46,7 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "%.2f", tip)
         totalLabel.text = String(format: "%.2f", total)
     }
+    
+    
 }
 

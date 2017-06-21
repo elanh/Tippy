@@ -107,7 +107,13 @@
                             <outletCollection property="gestureRecognizers" destination="fN7-Li-7Zj" appends="YES" id="Eq0-CK-AHD"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="qAT-5H-tI5"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="qAT-5H-tI5">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="PCW-iq-9iD">
+                            <connections>
+                                <segue destination="YSH-Ib-6Q3" kind="push" id="Crw-CA-xUU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="KbT-8q-BNE" id="5o6-YC-M8v"/>
                         <outlet property="tipControl" destination="19v-Ty-ANk" id="CUJ-tg-nIl"/>
@@ -123,6 +129,21 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="537.5" y="152.5"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="2g0-r3-FHX">
+            <objects>
+                <viewController id="YSH-Ib-6Q3" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="djk-ZW-J4P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mdY-9f-WI1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqe-zD-Hll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0n0-uS-9E9">

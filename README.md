@@ -34,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-There were no major challenges in the required components, however, I am encountering many challenges, most of which turn out to be simple fixes, in my additional features. 
+There were no major challenges in the required components, however, I am encountering many challenges in my additional features. 
 
 ## Credits
 

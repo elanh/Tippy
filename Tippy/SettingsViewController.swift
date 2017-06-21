@@ -13,7 +13,8 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let defaults = UserDefaults.standard
+        let tipValue = defaults.double(forKey: "default_tip_percentage")
     }
 
     override func didReceiveMemoryWarning() {
